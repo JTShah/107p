@@ -57,13 +57,13 @@ while True:
     else:
             cv2.putText(img,"lost",(75,90),cv2.FONT_HERSHEY_SIMPLEX,0.7,(0,0,255),2)
 
-
     goal_track(img,bbox)
-    cv2.imshow()
+    cv2.imshow("img",img)
 
     key=cv2.waitKey(1)
     
-video
+video.release()
+cv2.destroyAllWindows()
 
     
 
